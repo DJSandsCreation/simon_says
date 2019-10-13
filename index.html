@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
+	
+	
+<style type="text/css">
+	
+</style>
+
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Simon Says</h1>
+		<h1>A DJSandsCreation</h1>
+		
+	</header>
+<div id="game-wrapper">
+	<div id="game-container">
+			<svg id="paddles" viewBox="0 0 400 400" >
+				<!-- Paddles -->
+				<path data-id="0" class="paddle green clickable" d="M 1,200 L 200,200 L 200,1  A 200,200 0 0,0 1,200"/>
+				<path data-id="1" class="paddle red clickable" d="M 200,1 L 200,200 L 399,200 A 200,200 0 0,0 200,1" />
+				<path data-id="2" class="paddle yellow clickable"	d="M 200,399 L 200,200 L 1,200 A 200,200 0 0,0 200,399"/>
+				<path data-id="3" class="paddle blue clickable" d="M 399,200 L 200,200 L 200,399 A 200,200 0 0,0 399,200"/>
+
+				<!-- Borders -->
+				<circle class="circle" cx="50%" cy="50%" r="48%" fill="none" stroke="#333" stroke-width="4%"></circle>
+				<line x1="0%" y1="50%" x2="100%" y2="50%" stroke="#333" stroke-width="4%"></line>
+				<line x1="50%" y1="0%" x2="50%" y2="100%" stroke="#333" stroke-width="4%"></line>
+
+				<!-- Center Circle -->
+				<circle class="circle" cx="50%" cy="50%" r="100px"	fill="#333" ></circle>
+
+				<!-- SIMON -->
+				<text class="simon-font" x="135" y="170" font-size="40">SIMON</text>
+
+				<!-- Count -->
+				<line class="count-round" x1="130" y1="200" x2="170" y2="200" stroke="#1b1b1b" stroke-width="7%"></line>
+				<line class="count-round" x1="135" y1="200" x2="165" y2="200" stroke="#000" stroke-width="5%"></line>
+				<text id="count" class="simon-font" x="150" y="206" text-anchor="middle" font-size="20">--</text>
+				<text class="simon-font" x="137" y="225" font-size="12">COUNT</text>
+
+				<!-- Start -->
+				<circle id="start" class="red clickable" cx="200" cy="200" r="3%" stroke="#1b1b1b" stroke-width="1%" ></circle>
+				<text class="simon-font" x="187" y="225" font-size="12">START</text>
+
+				<!-- Strict -->
+				<circle id="strict-indicator" class="strict" cx="275" cy="200" r="0.8%" stroke="#1b1b1b" stroke-width="0.2%" ></circle>
+				<circle id="strict" class="yellow clickable" cx="250" cy="200" r="3%" stroke="#1b1b1b" stroke-width="1%" ></circle>
+				<text class="simon-font" x="236" y="225" font-size="12">STRICT</text>
+
+				<!-- OFF
+				<text class="simon-font clickable" x="150" y="265" font-size="15">OFF</text>
+
+				<!-- ON
+				<text class="simon-font clickable" x="240" y="265" font-size="15">ON</text>
+
+				<!-- Track
+				<line x1="185" y1="260" x2="225" y2="260" stroke="#1e1e1e" stroke-width="4%" stroke-linecap="round"></line>
+
+				<!-- Thumb
+				<circle id="on-off-switch" class="on clickable" cx="225" cy="260" r="1.5%" fill="#fefefe" ></circle>
+			-->
+			</svg>
+
+		</div>
+</div>
+	
+<script href="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+	
+	  
+</body>
+		
+</html>
